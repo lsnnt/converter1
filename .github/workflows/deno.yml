@@ -23,7 +23,7 @@ jobs:
       # Uncomment this step to verify the use of 'deno fmt' on each commit.
       # - name: Verify formatting
       #   run: deno fmt --check
-      - name: sudo git clone https://github.com/nityanand86876/converter1.git && cd converter1
+      - name: sudo git clone "https://github.com/nityanand86876/converter1.git" && cd converter1
         run: git clone 
       - name: firebase download
         run: sudo npm -g install "firebase-tools"
