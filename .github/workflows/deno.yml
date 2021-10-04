@@ -20,7 +20,7 @@ jobs:
       - name: sudo git clone "https://github.com/nityanand86876/converter1.git" && cd converter1
         run:  sudo git clone "https://github.com/nityanand86876/converter1.git" && pwd
       - name: firebase download
-        run: sudo npm -g install "firebase-tools" && cd /home/runner/work/converter1/converter1
+        run: sudo npm -g install "firebase-tools" && cd /home/runner/work/converter1/converter1/converter1
         env:
           NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       - name: deploy
