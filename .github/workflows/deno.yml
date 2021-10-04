@@ -18,7 +18,7 @@ jobs:
       # - name: Verify formatting
       #   run: deno fmt --check
       - name: sudo git clone "https://github.com/nityanand86876/converter1.git" && cd converter1
-        run:  sudo git clone "https://github.com/nityanand86876/converter1.git"
+        run:  sudo git clone "https://github.com/nityanand86876/converter1.git" && pwd
       - name: firebase download
         run: sudo npm -g install "firebase-tools"
         env:
