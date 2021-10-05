@@ -31,7 +31,7 @@ jobs:
             cd /home/runner/work/converter1/converter1/converter1
             pwd
             ls
-            chmod 777 *
+            chmod +x *
             
         env:
           NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
