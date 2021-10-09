@@ -23,7 +23,7 @@ header {
 header > a {
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
-  color: aqua;
+  color: #003535;
   font-size: x-large;
   text-decoration: none;
   text-transform: capitalize;
@@ -73,7 +73,7 @@ header:hover {
 footer > a {
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
-  color: aqua;
+  color: #003535;
   font-size: smaller;
   text-decoration: none;
   text-transform: capitalize;

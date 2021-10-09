@@ -4,33 +4,6 @@ function submit() {
   document.getElementById("out1").innerHTML = "Thanks for your response";
 }
 
-const port = "nnt";
-// function nnt() {
-//   document.getElementById("out").innerHTML = y.name + " is my name";
-// }
-
-x = {
-  name: "Nityanand Thakur",
-  class: "X A",
-  roll: "14",
-  // "age": "14",
-};
-
-
-y = JSON.constructor(x);
-const a212 =
-  y.name +
-  " is my name " +
-  "and my age is " +
-  y.roll +
-  " and my class is " +
-  y.class +
-  " and my roll no. is " +
-  y.roll +
-  " .";
-  console.log(a212);
-  console.warn(a212);
-  console.error(a212);
 function ctof() {
   let x = document.getElementById("777").value;
   const y = x * 1.8 + 32;
