@@ -1,0 +1,12 @@
+{
+    "name": "Converter",
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#00ff00",
+    "description": "conerter | convert daily life math activities.",
+    "dir": "auto",
+    "categories": "utilities",
+    "lang": "en",
+    "orientation": "any",
+    "scope": "/"
+}
