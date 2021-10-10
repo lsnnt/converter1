@@ -3,7 +3,7 @@
   src: url(../fonts/GIGI.TTF);
 } */
 * {
-  font-family: 'Noto Sans Display', serif;
+  font-family: nnt-serif;
 }
 .h1 {
   color:#155451;
@@ -21,7 +21,7 @@ header {
   font-size: larger;
 }
 header > a {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: nnt-serif;
   font-size: medium;
   color: #003535;
   font-size: x-large;
@@ -42,7 +42,7 @@ header:hover {
 }
 .input {
   display: flex;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: nnt-serif;
   font-style: normal;
   font-size: medium;
   align-items: center;
@@ -53,7 +53,7 @@ header:hover {
 .output {
   /* .input { */
   display: flex;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: nnt-serif;
   font-style: normal;
   font-size: medium;
   align-items: center;
@@ -71,13 +71,17 @@ header:hover {
   min-height: 114px;
 }
 footer > a {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: nnt-serif;
   font-size: medium;
   color: #003535;
   font-size: smaller;
   text-decoration: none;
   text-transform: capitalize;
   margin-right: -5%;
+}
+@font-face {
+  font-family: nnt-serif;
+  src: url(../fonts/droid-serif.ttf);
 }
 
 
