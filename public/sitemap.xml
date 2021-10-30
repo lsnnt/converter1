@@ -6,11 +6,11 @@
 
       <loc>https://converter1.cf/</loc>
 
-      <lastmod>2021-10-20</lastmod>
+      <lastmod>2021-10-30</lastmod>
 
       <changefreq>weekly</changefreq>
 
-      <priority>0.9</priority>
+      <priority>1.0</priority>
 
    </url>
    <url>
@@ -46,5 +46,15 @@
       <priority>0.9</priority>
 
    </url>
+   <url>
 
+      <loc>https://converter1.cf/nasa-live</loc>
+
+      <lastmod>2021-10-30</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
 </urlset> 
