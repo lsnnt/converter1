@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta property="og:title" content="Converter">
+    <link rel="preload" href="cdn/fonts/droid-serif.ttf">
     <meta property="og:description" content="This is a tool which converts &deg;F to &deg;C and vice-versa and converts angle to sin &theta;, angle to cos &theta;, angle to tan &theta; | With 💖 from Nityanand Thakur">
     <meta property="og:image" content="https://converter1.cf/cdn/favicon/favicon.png">
     <link rel="manifest" href="manifest.json"> 
@@ -13,25 +14,16 @@
     <title>Converter | Convert daily life maths terms | With 💖 from Nityanand Thakur</title>
     <script src="cdn/js/index.js"></script>
     <link rel="stylesheet" href="cdn/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@1,300&display=swap" rel="stylesheet">
   </head>
 
   <body class="body">
     <header>
       <a href="blog" style="margin-right: 1%;">Blog</a>
-      <a href="comments/index.html">Comment</a>
-      <a href="privacy.html">privacy policy</a>
-      <a href="nasa-live/index.html">Nasa live</a>
+      <a href="comments">Comment</a>
+      <a href="privacy-policy">privacy policy</a>
+      <a href="nasa-live">Nasa live</a>
 
     </header>
-    <!-- <pre class="input">
-      first of all,
-      sin, cos, tan wil not work properly 
-      to work it first change angle to radian.
-      then change the result it radian to angle
-    </pre> -->
     <span class="input">
       Celsius
       <input
@@ -42,8 +34,6 @@
         onchange="ctof()"
       />
     </span>
-    <!-- <div id="cto">output here.</div>
-     -->
     <div>
       <span class="output">
         output &deg; F
@@ -60,8 +50,6 @@
         onchange="ftoc()"
       />
     </span>
-    <!-- <div id="cto">output here.</div>
-     -->
     <div>
       <span class="output">
         output &deg; C
@@ -78,8 +66,6 @@
         onchange="atosin()"
       />
     </span>
-    <!-- <div id="cto">output here.</div>
-     -->
     <div>
       <span class="output">
         output value
@@ -96,8 +82,6 @@
         onchange="atocos()"
       />
     </span>
-    <!-- <div id="cto">output here.</div>
-     -->
     <div>
       <span class="output">
         output value
@@ -113,8 +97,6 @@
           onchange="atotan()"
         />
       </span>
-      <!-- <div id="cto">output here.</div>
-       -->
       <div>
         <span class="output">
           output value
@@ -126,42 +108,6 @@
           From Nityanand Thakur.
         </address>
       </div>
-
-      <!-- <span class="input">
-        angle to change to radian
-        <input
-          type="float"
-          placeholder="input &deg; angle"
-          id="777777"
-          oninput="atorad()"
-          onchange="atorad()"
-        />
-      </span>
-      <div id="cto">output here.</div>
-       -->
-      <!-- <div>
-        <span class="output">
-          output value
-          <p id="atorad"></p>
-        </span>
-      </div>
-      <span class="input">
-        radian to change to angle
-        <input
-          type="float"
-          placeholder="input &deg; angle"
-          id="7777777"
-          oninput="radtoa()"
-          onchange="radtoa()"
-        />
-      </span>
-       <div id="cto">output here.</div>
-      
-      <div>
-        <span class="output">
-          output value
-          <p id="radtoa"></p>
-        </span> -->
       </div>
     </div>
     <noscript class="input">
@@ -188,14 +134,8 @@
     </footer>
   </body>
   <script type="module">
-    // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
       apiKey: "AIzaSyDAQY7_XcCqiLTyrnFUfgA2D03_Uc7hLb4",
       authDomain: "nityanand-320811.firebaseapp.com",
@@ -205,8 +145,6 @@
       appId: "1:389459339207:web:9b25b78dc19ca1eba99be2",
       measurementId: "G-GL17JLREHC"
     };
-  
-    // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
