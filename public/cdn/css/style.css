@@ -2,6 +2,21 @@
   font-family: GIGI;
   src: url(../fonts/GIGI.TTF);
 } */
+a {
+  transition-duration: .2s
+}
+
+.sponsors-logo img {
+  filter: grayscale(100%);
+  transition-duration: .3s;
+  height: 50px;
+  width: 100%
+}
+
+.sponsors-logo img:hover {
+  filter: grayscale(0);
+  transition-duration: .3s
+}
 * {
   font-family: nnt-serif;
 }

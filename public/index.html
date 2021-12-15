@@ -1,126 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta property="og:title" content="Converter">
-    <link rel="preload" href="cdn/fonts/droid-serif.ttf">
-    <meta property="og:description" content="This is a tool which converts &deg;F to &deg;C and vice-versa and converts angle to sin &theta;, angle to cos &theta;, angle to tan &theta; | With 💖 from Nityanand Thakur">
-    <meta property="og:image" content="https://converter1.cf/cdn/favicon/favicon.png">
-    <link rel="manifest" href="manifest.json"> 
-    <link rel="apple-touch-icon" href="/cdn/favicon/favicon.png">
-    <link rel="shortcut icon" href="cdn/favicon/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a tool which converts &deg;F to &deg;C and vice-versa and converts angle to sin &theta;, angle to cos &theta;, angle to tan &theta; | With 💖 from Nityanand Thakur">
-    <title>Converter | Convert daily life maths terms | With 💖 from Nityanand Thakur</title>
-    <script src="cdn/js/index.js"></script>
-    <link rel="stylesheet" href="cdn/css/style.css" />
-  </head>
 
-  <body class="body">
-    <header>
-      <a href="blog" style="margin-right: 1%;">Blog</a>
-      <a href="comments">Comment</a>
-      <a href="privacy-policy">privacy policy</a>
-      <a href="nasa-live">Nasa live</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta property="og:title" content="Converter">
+  <link rel="preload" href="cdn/fonts/droid-serif.ttf">
+  <meta property="og:description"
+    content="This is a tool which converts &deg;F to &deg;C and vice-versa and converts angle to sin &theta;, angle to cos &theta;, angle to tan &theta; | With 💖 from Nityanand Thakur">
+  <meta property="og:image" content="https://converter1.cf/cdn/favicon/favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/cdn/favicon/favicon.png">
+  <link rel="shortcut icon" href="cdn/favicon/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="This is a tool which converts &deg;F to &deg;C and vice-versa and converts angle to sin &theta;, angle to cos &theta;, angle to tan &theta; | With 💖 from Nityanand Thakur">
+  <title>Converter | Convert daily life maths terms | With 💖 from Nityanand Thakur</title>
+  <script src="cdn/js/index.js"></script>
+  <link rel="stylesheet" href="cdn/css/style.css" />
+  <style>
+    a {
+      transition-duration: .2s
+    }
 
-    </header>
-    <span class="input">
-      Celsius
-      <input
-        type="float"
-        placeholder="input &deg; C"
-        id="777"
-        oninput="ctof()"
-        onchange="ctof()"
-      />
+    .sponsors-logo img {
+      filter: grayscale(100%);
+      transition-duration: .3s;
+      height: 50px;
+      width: 100%
+    }
+
+    .sponsors-logo img:hover {
+      filter: grayscale(0);
+      transition-duration: .3s
+    }
+  </style>
+</head>
+
+<body class="body">
+  <header>
+    <a href="blog" style="margin-right: 1%;">Blog</a>
+    <a href="comments">Comment</a>
+    <a href="privacy-policy">privacy policy</a>
+    <a href="nasa-live">Nasa live</a>
+
+  </header>
+  <span class="input">
+    Celsius
+    <input type="float" placeholder="input &deg; C" id="777" oninput="ctof()" onchange="ctof()" />
+  </span>
+  <div>
+    <span class="output">
+      output &deg; F
+      <p id="ctof1"></p>
     </span>
-    <div>
-      <span class="output">
-        output &deg; F
-        <p id="ctof1"></p>
-      </span>
-    </div>
-    <span class="input">
-      Fahrenheit
-      <input
-        type="float"
-        placeholder="input &deg; F"
-        id="77"
-        oninput="ftoc()"
-        onchange="ftoc()"
-      />
+  </div>
+  <span class="input">
+    Fahrenheit
+    <input type="float" placeholder="input &deg; F" id="77" oninput="ftoc()" onchange="ftoc()" />
+  </span>
+  <div>
+    <span class="output">
+      output &deg; C
+      <p id="ftoc"></p>
     </span>
-    <div>
-      <span class="output">
-        output &deg; C
-        <p id="ftoc"></p>
-      </span>
-    </div>
+  </div>
+  <span class="input">
+    angle to change to sin
+    <input type="float" placeholder="input &deg; angle" id="7777" oninput="atosin()" onchange="atosin()" />
+  </span>
+  <div>
+    <span class="output">
+      output value
+      <p id="atosin"></p>
+    </span>
+  </div>
+  <span class="input">
+    angle to change to cos
+    <input type="float" placeholder="input &deg; angle" id="7" oninput="atocos()" onchange="atocos()" />
+  </span>
+  <div>
+    <span class="output">
+      output value
+      <p id="atocos"></p>
+    </span>
     <span class="input">
-      angle to change to sin
-      <input
-        type="float"
-        placeholder="input &deg; angle"
-        id="7777"
-        oninput="atosin()"
-        onchange="atosin()"
-      />
+      angle to change to tan
+      <input type="float" placeholder="input &deg; angle" id="77777" oninput="atotan()" onchange="atotan()" />
     </span>
     <div>
       <span class="output">
         output value
-        <p id="atosin"></p>
+        <p id="atotan"></p>
       </span>
     </div>
-    <span class="input">
-      angle to change to cos
-      <input
-        type="float"
-        placeholder="input &deg; angle"
-        id="7"
-        oninput="atocos()"
-        onchange="atocos()"
-      />
-    </span>
-    <div>
-      <span class="output">
-        output value
-        <p id="atocos"></p>
-      </span>
-      <span class="input">
-        angle to change to tan
-        <input
-          type="float"
-          placeholder="input &deg; angle"
-          id="77777"
-          oninput="atotan()"
-          onchange="atotan()"
-        />
-      </span>
-      <div>
-        <span class="output">
-          output value
-          <p id="atotan"></p>
-        </span>
-      </div>
-      <div class="input">
-        <address style="font-size: medium;">
-          From Nityanand Thakur.
-        </address>
-      </div>
-      </div>
+    <div class="input">
+      <address style="font-size: medium;">
+        From Nityanand Thakur.
+      </address>
     </div>
-    <noscript class="input">
-      <pre>
+  </div>
+  </div>
+  <noscript class="input">
+    <pre>
         <code>
           Please use browser that works with javascript such as 
           [ 'Microsoft edge' , 'Firefox' , 'Chrome' ].
         </code>
       </pre>
-    </noscript>
-    <footer class="footer">
-      <h6>
-        <a href="sitemap.xml" style="
+  </noscript>
+  <footer class="footer">
+    <h6>
+      <a href="sitemap.xml" style="
         font-family: 'Times New Roman', Times, serif;
         font-size: medium;
         color: #00baba;
@@ -129,23 +119,29 @@
         text-transform: capitalize;
         margin-right: -5%;
         ">Sitemap</a>
-      </h6>
-      <h5>&copy; www.converter1.cf</h5>
-    </footer>
-  </body>
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
-    const firebaseConfig = {
-      apiKey: "AIzaSyDAQY7_XcCqiLTyrnFUfgA2D03_Uc7hLb4",
-      authDomain: "nityanand-320811.firebaseapp.com",
-      projectId: "nityanand-320811",
-      storageBucket: "nityanand-320811.appspot.com",
-      messagingSenderId: "389459339207",
-      appId: "1:389459339207:web:9b25b78dc19ca1eba99be2",
-      measurementId: "G-GL17JLREHC"
-    };
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
+    </h6>
+    <h5>&copy; www.converter1.cf</h5>
+
+    <hr>
+    <h5>Hosted on <a class="sponsors-logo"><img style="max-width:50px" class="inline w-auto"
+          src="data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNSAyOCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNlYTQzMzU7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fS5jbHMtM3tmaWxsOiMzNGE4NTM7fS5jbHMtNHtmaWxsOiNmYmJjMDU7fS5jbHMtNXtmaWxsOiM1ZjYzNjg7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTIxLjg1LDcuNDFsMSwwLDIuODUtMi44NS4xNC0xLjIxQTEyLjgxLDEyLjgxLDAsMCwwLDUsOS42YTEuNTUsMS41NSwwLDAsMSwxLS4wNmw1LjctLjk0cy4yOS0uNDguNDQtLjQ1YTcuMTEsNy4xMSwwLDAsMSw5LjczLS43NFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOS43Niw5LjZhMTIuODQsMTIuODQsMCwwLDAtMy44Ny02LjI0bC00LDRBNy4xMSw3LjExLDAsMCwxLDI0LjUsMTN2LjcxYTMuNTYsMy41NiwwLDEsMSwwLDcuMTJIMTcuMzhsLS43MS43MnY0LjI3bC43MS43MUgyNC41QTkuMjYsOS4yNiwwLDAsMCwyOS43Niw5LjZaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTAuMjUsMjYuNDloNy4xMnYtNS43SDEwLjI1YTMuNTQsMy41NCwwLDAsMS0xLjQ3LS4zMmwtMSwuMzFMNC45MSwyMy42M2wtLjI1LDFBOS4yMSw5LjIxLDAsMCwwLDEwLjI1LDI2LjQ5WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTEwLjI1LDhBOS4yNiw5LjI2LDAsMCwwLDQuNjYsMjQuNmw0LjEzLTQuMTNhMy41NiwzLjU2LDAsMSwxLDQuNzEtNC43MWw0LjEzLTQuMTNBOS4yNSw5LjI1LDAsMCwwLDEwLjI1LDhaIi8+PC9zdmc+"
+          alt="Google Cloud" title="Google Cloud" /></a></h5>
+  </footer>
+</body>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyDAQY7_XcCqiLTyrnFUfgA2D03_Uc7hLb4",
+    authDomain: "nityanand-320811.firebaseapp.com",
+    projectId: "nityanand-320811",
+    storageBucket: "nityanand-320811.appspot.com",
+    messagingSenderId: "389459339207",
+    appId: "1:389459339207:web:9b25b78dc19ca1eba99be2",
+    measurementId: "G-GL17JLREHC"
+  };
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </html>
